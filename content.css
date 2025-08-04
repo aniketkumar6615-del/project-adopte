@@ -1,0 +1,321 @@
+/* AdaptoWeb Content Styles */
+
+/* Tooltip styles */
+.adaptoweb-tooltip {
+  position: absolute !important;
+  background: #333 !important;
+  color: white !important;
+  padding: 8px 12px !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  max-width: 300px !important;
+  z-index: 10000 !important;
+  pointer-events: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  font-family: Arial, sans-serif !important;
+  line-height: 1.4 !important;
+  word-wrap: break-word !important;
+}
+
+/* Form overlay styles */
+.adaptoweb-form-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  z-index: 10000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  animation: adaptoweb-fadeIn 0.3s ease-out !important;
+}
+
+.adaptoweb-form-modal {
+  background: white !important;
+  padding: 24px !important;
+  border-radius: 8px !important;
+  max-width: 500px !important;
+  width: 90% !important;
+  max-height: 80% !important;
+  overflow-y: auto !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+  animation: adaptoweb-slideUp 0.3s ease-out !important;
+}
+
+/* AdaptoWeb specific element markers */
+[data-adaptoweb-hidden] {
+  display: none !important;
+}
+
+[data-adaptoweb-styled] {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  font-family: Arial, sans-serif !important;
+}
+
+[data-adaptoweb-simplified] {
+  cursor: help !important;
+  position: relative !important;
+}
+
+[data-adaptoweb-simplified]:hover {
+  background-color: #f0f9ff !important;
+  transition: background-color 0.2s ease !important;
+}
+
+[data-adaptoweb-highlighted] {
+  background: #16a34a !important;
+  color: white !important;
+  border: 2px solid #15803d !important;
+  padding: 12px 24px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease !important;
+}
+
+[data-adaptoweb-highlighted]:hover {
+  background: #15803d !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Form guidance trigger button */
+.adaptoweb-form-trigger {
+  position: absolute !important;
+  top: -40px !important;
+  right: 0 !important;
+  padding: 8px 16px !important;
+  background: #2563eb !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  z-index: 1000 !important;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease !important;
+  font-family: Arial, sans-serif !important;
+}
+
+.adaptoweb-form-trigger:hover {
+  background: #1d4ed8 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Progress indicator styles */
+.adaptoweb-progress {
+  width: 100% !important;
+  height: 4px !important;
+  background: #e5e7eb !important;
+  border-radius: 2px !important;
+  overflow: hidden !important;
+}
+
+.adaptoweb-progress-bar {
+  height: 100% !important;
+  background: #2563eb !important;
+  border-radius: 2px !important;
+  transition: width 0.3s ease !important;
+}
+
+/* Button styles */
+.adaptoweb-button {
+  padding: 12px 24px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+  font-family: Arial, sans-serif !important;
+}
+
+.adaptoweb-button-primary {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+.adaptoweb-button-primary:hover {
+  background: #1d4ed8 !important;
+}
+
+.adaptoweb-button-secondary {
+  background: #6b7280 !important;
+  color: white !important;
+}
+
+.adaptoweb-button-secondary:hover {
+  background: #4b5563 !important;
+}
+
+.adaptoweb-button-success {
+  background: #16a34a !important;
+  color: white !important;
+}
+
+.adaptoweb-button-success:hover {
+  background: #15803d !important;
+}
+
+/* Input field enhancements */
+.adaptoweb-enhanced-input {
+  width: 100% !important;
+  padding: 8px 12px !important;
+  border: 2px solid #d1d5db !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  font-family: Arial, sans-serif !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.adaptoweb-enhanced-input:focus {
+  outline: none !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+/* Label enhancements */
+.adaptoweb-enhanced-label {
+  display: block !important;
+  margin-bottom: 4px !important;
+  font-weight: 500 !important;
+  color: #374151 !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* Animation keyframes */
+@keyframes adaptoweb-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes adaptoweb-slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes adaptoweb-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .adaptoweb-tooltip {
+    background: #000 !important;
+    border: 1px solid #fff !important;
+  }
+  
+  .adaptoweb-form-modal {
+    border: 2px solid #000 !important;
+  }
+  
+  [data-adaptoweb-simplified]:hover {
+    background-color: #ffff00 !important;
+    color: #000 !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .adaptoweb-form-overlay,
+  .adaptoweb-form-modal,
+  .adaptoweb-enhanced-input,
+  .adaptoweb-button,
+  [data-adaptoweb-simplified],
+  [data-adaptoweb-highlighted] {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Focus management for accessibility */
+.adaptoweb-focus-trap {
+  outline: 2px solid #2563eb !important;
+  outline-offset: 2px !important;
+}
+
+/* Screen reader only content */
+.adaptoweb-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Loading states */
+.adaptoweb-loading {
+  position: relative !important;
+  color: transparent !important;
+}
+
+.adaptoweb-loading::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin: -8px 0 0 -8px !important;
+  border: 2px solid #e5e7eb !important;
+  border-top: 2px solid #2563eb !important;
+  border-radius: 50% !important;
+  animation: adaptoweb-spin 1s linear infinite !important;
+}
+
+@keyframes adaptoweb-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .adaptoweb-form-modal {
+    width: 95% !important;
+    max-height: 90% !important;
+    padding: 16px !important;
+  }
+  
+  .adaptoweb-tooltip {
+    max-width: 250px !important;
+    font-size: 12px !important;
+  }
+  
+  .adaptoweb-button {
+    padding: 14px 20px !important;
+    font-size: 18px !important;
+  }
+  
+  .adaptoweb-enhanced-input {
+    font-size: 18px !important;
+    padding: 12px 16px !important;
+  }
+}

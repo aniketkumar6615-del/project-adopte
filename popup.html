@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdaptoWeb Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h1>AdaptoWeb</h1>
+      </div>
+      <div class="status-indicator">
+        <div class="status-dot" id="statusDot"></div>
+        <span id="statusText">Loading...</span>
+      </div>
+    </header>
+
+    <main class="popup-main">
+      <section class="master-control">
+        <div class="toggle-container">
+          <label class="toggle-label" for="masterToggle">
+            <span class="toggle-text">Enable AdaptoWeb</span>
+            <div class="toggle-switch">
+              <input type="checkbox" id="masterToggle" class="toggle-input">
+              <span class="toggle-slider"></span>
+            </div>
+          </label>
+        </div>
+      </section>
+
+      <section class="modules-section" id="modulesSection">
+        <h2>Adaptation Modules</h2>
+        
+        <div class="module-card">
+          <div class="module-header">
+            <div class="module-icon">📄</div>
+            <div class="module-info">
+              <h3>Layout Simplification</h3>
+              <p>Removes distractions and applies clean formatting</p>
+            </div>
+            <div class="toggle-switch">
+              <input type="checkbox" id="layoutToggle" class="toggle-input">
+              <span class="toggle-slider"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="module-card">
+          <div class="module-header">
+            <div class="module-icon">💬</div>
+            <div class="module-info">
+              <h3>Language Simplification</h3>
+              <p>Simplifies complex text while preserving meaning</p>
+            </div>
+            <div class="toggle-switch">
+              <input type="checkbox" id="languageToggle" class="toggle-input">
+              <span class="toggle-slider"></span>
+            </div>
+          </div>
+          <div class="module-settings" id="languageSettings">
+            <div class="slider-container">
+              <label for="simplificationLevel" class="slider-label">
+                Simplification Level: <span id="simplificationValue">2</span>
+              </label>
+              <input type="range" id="simplificationLevel" min="1" max="3" value="2" class="slider">
+              <div class="slider-labels">
+                <span>Basic</span>
+                <span>Moderate</span>
+                <span>Advanced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="module-card">
+          <div class="module-header">
+            <div class="module-icon">🎯</div>
+            <div class="module-info">
+              <h3>Interaction Guidance</h3>
+              <p>Provides step-by-step help for complex forms</p>
+            </div>
+            <div class="toggle-switch">
+              <input type="checkbox" id="interactionToggle" class="toggle-input">
+              <span class="toggle-slider"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="personalization-section">
+        <h2>Personalization</h2>
+        
+        <div class="setting-group">
+          <label for="fontSize" class="setting-label">
+            Font Size: <span id="fontSizeValue">16</span>px
+          </label>
+          <input type="range" id="fontSize" min="12" max="24" value="16" class="slider">
+        </div>
+
+        <div class="setting-group">
+          <label for="lineSpacing" class="setting-label">
+            Line Spacing: <span id="lineSpacingValue">1.5</span>x
+          </label>
+          <input type="range" id="lineSpacing" min="1.0" max="2.5" step="0.1" value="1.5" class="slider">
+        </div>
+      </section>
+
+      <section class="help-section">
+        <button class="help-button" id="helpButton">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 17h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Help & Feedback
+        </button>
+      </section>
+    </main>
+
+    <footer class="popup-footer">
+      <p>&copy; 2025 AdaptoWeb - Empowering accessible web experiences</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
